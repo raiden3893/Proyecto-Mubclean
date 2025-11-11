@@ -28,15 +28,10 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             // Encabezado del Drawer (opcional, pero común)
             const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blueAccent,
-              ),
+              decoration: BoxDecoration(color: Colors.blueAccent),
               child: Text(
                 'Opciones del Menú',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
+                style: TextStyle(color: Colors.white, fontSize: 24),
               ),
             ),
             // Opción 1 del menú
@@ -81,13 +76,10 @@ class _HomePageState extends State<HomePage> {
       // --- Body (Contenido principal de la página) ---
       body: const Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center, // Centra el contenido verticalmente
+          mainAxisAlignment:
+              MainAxisAlignment.center, // Centra el contenido verticalmente
           children: <Widget>[
-            Icon(
-              Icons.dashboard,
-              size: 100,
-              color: Colors.grey,
-            ),
+            Icon(Icons.dashboard, size: 100, color: Colors.grey),
             SizedBox(height: 20), // Espacio entre el icono y el texto
             Text(
               'Bienvenido a tu Página de Inicio',
